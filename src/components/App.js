@@ -7,7 +7,7 @@ import Form from "./Form.js"
 export default props => {
   return (
     <Provider store={store}>
-      <div>
+      <div className="outerWrapper">
         <Form />
         <Todos />
       </div>

@@ -12,13 +12,15 @@ export default props => {
           <div className="itemFlex">
             <p className="todoItems">
               <input className="radioButton" type="radio" />
-              item {todo.id}: {todo.item}
+              {todo.item}
             </p>
+
             <button className="delete" onClick={e => del(todo.id)}>
               Delete
             </button>
           </div>
         ))}
+        <p>Items left: {todos.length}</p>
       </div>
     </div>
   )
