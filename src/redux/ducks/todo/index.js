@@ -21,58 +21,58 @@ import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 
 // 2.action definitions
-const GET_USERS = "user/GET_USERS"
+const GET_TODOS = "user/GET_TODOS"
 
 // 3.initial state
 const initialState = {
-  users: []
+  todos: []
 }
 // 4. reducer
 export default (state = initialState, action) => {
   switch (action.type) {
-    case GET_USERS:
-      return { ...state, users: action.payload }
+    case GET_TODOS:
+      return { ...state, todos: action.payload }
     default:
       return state
   }
 }
 
 //5. action creators
-function getUsers() {
+function getTodos() {
   return dispatch => {
-    axios.get("/users").then(resp => {
+    axios.get("/todos").then(resp => {
       dispatch({
-        type: GET_USERS,
+        type: GET_TODOS,
         payload: resp.data
       })
     })
   }
 }
 
-function addUser(name) {
+function addTodo(item) {
   return dispatch => {
-    axios.post("/users", { name }).then(resp => {
-      dispatch(getUsers())
+    axios.post("/todos", { item }).then(resp => {
+      dispatch(getTodos())
     })
   }
 }
 
-function deleteUser(id) {
+function deleteTodo(id) {
   return dispatch => {
-    axios.delete("./users/" + id).then(resp => {
-      dispatch(getUsers())
+    axios.delete("./todos/" + id).then(resp => {
+      dispatch(getTodos())
     })
   }
 }
 //6. custom hooks
-export function useUsers() {
+export function useTodos() {
   const dispatch = useDispatch()
-  const users = useSelector(appState => appState.userState.users)
-  const add = user => dispatch(addUser(user))
-  const del = userId => dispatch(deleteUser(userId))
+  const todos = useSelector(appState => appState.todoState.todos)
+  const add = todo => dispatch(addTodo(todo))
+  const del = todoId => dispatch(deleteTodo(todoId))
 
   useEffect(() => {
-    dispatch(getUsers())
+    dispatch(getTodos())
   }, [])
-  return { users, add, del }
+  return { todos, add, del }
 }

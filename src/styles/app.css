@@ -1,0 +1,46 @@
+.outerWrapperTop {
+  width: 700px;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.outerWrapperBottom {
+  width: 700px;
+  margin: auto;
+  background-color: lightblue;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+  display: grid;
+}
+.wrapper h6 {
+  text-align: center;
+  margin: 0;
+  font-size: 6em;
+  font-weight: 100;
+  display: grid;
+}
+.itemField {
+  display: flex;
+  border: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+.itemFlex {
+  display: flex;
+  border: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+.radioButton {
+}
+.todoItems {
+  margin: 0;
+}
+.delete {
+}

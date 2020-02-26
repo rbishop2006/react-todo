@@ -1,3 +1,16 @@
 {
-  "users": []
+  "todos": [
+    {
+      "item": "take out the trash",
+      "id": 1
+    },
+    {
+      "item": "pick up the dry cleaning",
+      "id": 2
+    },
+    {
+      "item": "go to the grocery store",
+      "id": 3
+    }
+  ]
 }
