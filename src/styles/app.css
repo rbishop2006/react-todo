@@ -81,9 +81,20 @@ input.checkBox {
   height: 30px;
   width: 30px;
 }
+#clearCompleted {
+  border-radius: 5px;
+}
+#clearCompleted:hover {
+  background-color: rgb(48, 128, 249);
+  color: white;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
 .iconDelete:hover {
   color: rgb(48, 128, 249);
-  transition: 0.3s;
+  transition: 0.2s;
+  transition: 0.2s;
+  transform: scale(1.2);
 }
 .completed {
   text-decoration: line-through;

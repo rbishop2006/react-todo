@@ -69,7 +69,9 @@ export default props => {
             />
           </div>
           <div>
-            <button onClick={e => clear()}>Clear completed</button>
+            <button id="clearCompleted" onClick={e => clear()}>
+              Clear completed
+            </button>
           </div>
         </div>
       </div>

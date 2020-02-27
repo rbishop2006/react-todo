@@ -6,23 +6,13 @@
       "id": 1
     },
     {
-      "item": "wash the car",
-      "status": "active",
-      "id": 2
-    },
-    {
-      "item": "make dinner",
-      "status": "active",
-      "id": 4
-    },
-    {
       "item": "say hi to Ryan",
       "status": "active",
       "id": 5
     },
     {
       "item": "turn in homework",
-      "status": "completed",
+      "status": "active",
       "id": 6
     },
     {
@@ -32,8 +22,18 @@
     },
     {
       "item": "make a todo list",
-      "status": "completed",
+      "status": "active",
       "id": 8
+    },
+    {
+      "item": "wash the car",
+      "status": "active",
+      "id": 9
+    },
+    {
+      "item": "call NV Energy",
+      "status": "active",
+      "id": 10
     }
   ]
 }
