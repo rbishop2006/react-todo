@@ -2,7 +2,10 @@
   width: 700px;
   margin: auto;
   background-color: lightblue;
+
   padding-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -17,24 +20,72 @@
   font-weight: 100;
   display: grid;
 }
-.itemField {
+.itemField input {
   display: flex;
+  width: 100%;
   border: 1px solid black;
+  background-color: lightcyan;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
   justify-content: space-between;
+  font-size: 2em;
+  font-weight: 300;
+}
+::placeholder {
+  padding-left: 10px;
+  font-style: italic;
+  color: darkgray;
 }
 .itemFlex {
-  display: flex;
-  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  align-items: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 2em;
+  font-weight: 200;
+}
+.checkBox {
+  margin-left: 20px;
+}
+input.checkBox {
+  height: 30px;
+  width: 30px;
+}
+#itemsTodo {
+  margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  justify-content: space-between;
 }
-.radioButton {
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0 0 10px 10px;
+  font-weight: 300;
 }
-.todoItems {
-  margin: 0;
-}
+
 .delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.iconDelete {
+  height: 30px;
+  width: 30px;
+}
+.iconDelete:hover {
+  color: rgb(48, 128, 249);
+  transition: 0.3s;
+}
+.completed {
+  text-decoration: line-through;
+  color: darkgray;
 }

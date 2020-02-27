@@ -1,16 +1,39 @@
 {
   "todos": [
     {
-      "item": "pick up groceries",
-      "id": 3
+      "item": "buy groceries",
+      "status": "active",
+      "id": 1
     },
     {
-      "item": "take out the trash",
+      "item": "wash the car",
+      "status": "active",
+      "id": 2
+    },
+    {
+      "item": "make dinner",
+      "status": "active",
+      "id": 4
+    },
+    {
+      "item": "say hi to Ryan",
+      "status": "active",
       "id": 5
     },
     {
-      "item": "pick up the kids",
+      "item": "turn in homework",
+      "status": "completed",
       "id": 6
+    },
+    {
+      "item": "pick up dry cleaning",
+      "status": "active",
+      "id": 7
+    },
+    {
+      "item": "make a todo list",
+      "status": "completed",
+      "id": 8
     }
   ]
 }
