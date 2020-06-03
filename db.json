@@ -6,34 +6,9 @@
       "id": 1
     },
     {
-      "item": "say hi to Ryan",
-      "status": "active",
-      "id": 5
-    },
-    {
-      "item": "turn in homework",
-      "status": "active",
-      "id": 6
-    },
-    {
-      "item": "pick up dry cleaning",
-      "status": "active",
-      "id": 7
-    },
-    {
-      "item": "make a todo list",
-      "status": "active",
-      "id": 8
-    },
-    {
-      "item": "wash the car",
-      "status": "active",
-      "id": 9
-    },
-    {
-      "item": "call NV Energy",
-      "status": "active",
-      "id": 10
+      "item": "go to the Post Office",
+      "status": "completed",
+      "id": 2
     }
   ]
 }
